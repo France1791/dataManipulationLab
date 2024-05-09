@@ -7,6 +7,9 @@ let n4 = 11;
 //check if all numbers are divisible by 5
 const isDivisible = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
 
+//let's check if the first number n1 is larger than the last number n4
+const isLarger = n1 > n4;
+
 
 
 // The initial numbers that must be verified.
@@ -44,7 +47,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isDivisible);
+console.log(isLarger);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
