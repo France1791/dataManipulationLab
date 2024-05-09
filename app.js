@@ -62,3 +62,23 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+  //EXERCICE #2
+  
+
+
+  //Planninig a road trip, total distance is 1500 miles, let's add the
+  // total miles in a variable const totalMiles and total miles per 1 gallon of fuel
+  //  in a variable milesPerGallon
+  const totalMiles = 1500;
+  let milesPerGallon = 30;
+  const totalFuel = totalMiles/milesPerGallon;
+
+  //let's check if the budget will be enough.
+  //let's put the average cost per gallon in a variable averageCost and
+  //the budget in a variable budget.
+  const budget = 175;
+  const pricePerGallon = 3;
+  const isBudgetEnough = budget/pricePerGallon > totalFuel;
+  console.log(isBudgetEnough);
+
