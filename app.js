@@ -1,22 +1,26 @@
-let n1 = 13;
-let n2 = 10;
-let n3 = 16;
-let n4 = 11;
+// The initial numbers that must be verified.
+const n1 = 10;
+const n2 = 15;
+const n3 = 20;
+const n4 = 5;
 
 
 //check if all numbers are divisible by 5
 const isDivisible = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
+console.log(isDivisible);
 
 //let's check if the first number n1 is larger than the last number n4
 const isLarger = n1 > n4;
+console.log(isLarger);
+
+// let's do some arithmetic. we will subscribe
+//first number from the second number.then multiply the 
+//result by the third number
+//find the remainder of dividing the results by the 4th number.
+const someArithm = ((n1 - n2) * n3) / n4;
+console.log(someArithm);
 
 
-
-// The initial numbers that must be verified.
-//const n1 = 10;
-//const n2 = 15;
-//const n3 = 20;
-//const n4 = 5;
 
 // Check one: add up to 50
 // This is a fairly simple operation using
@@ -33,6 +37,7 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+console.log(isOver25);
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -47,7 +52,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isLarger);
+console.log(isValid);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
