@@ -82,3 +82,26 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   const isBudgetEnough = budget/pricePerGallon > totalFuel;
   console.log(isBudgetEnough);
 
+// let's check how long will the trip take in hours
+//let's put the average mile per hour in a variable averagePerHour
+let averagePerHour =55;
+const howLong = totalMiles/averagePerHour;
+
+
+let newAveragePerHour = 60;
+const howLong2 = totalMiles/newAveragePerHour;
+
+
+let thirdAverage = 75;
+const howLong3 = totalMiles/thirdAverage;
+
+
+
+
+console.log(howLong);
+console.log(howLong2);
+console.log(howLong3);
+
+console.log(`It will take us ${howLong}hrs if we drive ${averagePerHour} miles per hour. However, it will take
+${howLong2}hrs if we drive ${newAveragePerHour} and finally, it will take us ${howLong3}hrs
+on the road if we drive ${thirdAverage} miles per hour. So ${thirdAverage} miles per hour makes more sense for the trip.`);
